@@ -1,0 +1,5 @@
+wb-mqtt-dac (1.0) stable; urgency=medium
+
+  * Initial release.
+
+ -- Evgeny Boger <boger@contactless.ru>  Mon, 28 Mar 2016 20:17:06 +0300

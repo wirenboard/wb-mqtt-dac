@@ -1,0 +1,11 @@
+Source: wb-mqtt-dac
+Maintainer: Evgeny Boger <boger@contactless.ru>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: wb-mqtt-dac
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, wb-rules
+Description: wb-rules-based IIO DAC driver for WB MQTT
