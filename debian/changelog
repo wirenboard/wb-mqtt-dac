@@ -1,3 +1,9 @@
+wb-mqtt-dac (1.1) stable; urgency=medium
+
+  * adds support for finding IIO node by of_node name 
+
+ -- Evgeny Boger <boger@contactless.ru>  Thu, 24 May 2018 21:48:39 +0300
+
 wb-mqtt-dac (1.0) stable; urgency=medium
 
   * Initial release.
