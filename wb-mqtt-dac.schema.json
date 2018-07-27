@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "title": "Digital Outputs Configuration",
+    "title": "Analog Outputs Configuration",
     "configPath": "/etc/wb-mqtt-dac.conf",
     "configFile": {
         "path": "/etc/wb-mqtt-dac.conf",
@@ -62,7 +62,6 @@
             "items": {
                 "$ref": "#/definitions/dac_channel"
             },
-            "minItems": 1,
             "_format": "",
             "propertyOrder": 2
         }
