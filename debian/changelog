@@ -1,3 +1,10 @@
+wb-mqtt-dac (1.1.2) stable; urgency=medium
+
+  * use deb-systemd-invoke restart wb-rules instead of service wb-rules
+    restart to build rootfs properly after removing wb-rules initscript
+
+ -- Nikita Maslov <nikita.maslov@wirenboard.ru>  Mon, 31 May 2021 23:42:58 +0300
+
 wb-mqtt-dac (1.1.1) stable; urgency=medium
 
   * fixes config name
