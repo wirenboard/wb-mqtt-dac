@@ -1,7 +1,7 @@
 {
     "type": "object",
-    "title": "Analog Outputs",
-    "description": "Analog outputs configuration",
+    "title": "Analog Outputs Configuration",
+    "description": "Controller analog outputs configuration",
     "configPath": "/etc/wb-mqtt-dac.conf",
     "configFile": {
         "path": "/etc/wb-mqtt-dac.conf",
@@ -77,8 +77,8 @@
 
     "translations": {
         "ru": {
-            "Analog Outputs": "Аналоговые выходы",
-            "Analog outputs configuration": "Конфигурация аналоговых выходов контроллера"
+            "Analog Outputs Configuration": "Аналоговые выходы",
+            "Controller analog outputs configuration": "Конфигурация аналоговых выходов контроллера"
         }
     }
 }
