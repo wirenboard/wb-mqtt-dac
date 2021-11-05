@@ -20,7 +20,7 @@
                 "multiplier": {
                     "type": "number",
                     "title": "Multiplier",
-                    "description": "The DAC output voltage is multiplied to this factor to get the resulting output value",
+                    "description": "multiplier_description",
                     "propertyOrder": 2
                 },
                 "max_value_mv": {
@@ -76,9 +76,22 @@
     "required": ["device_name", "channels"],
 
     "translations": {
+        "en": {
+            "multiplier_description": "The DAC output voltage is multiplied to this factor to get the resulting output value"
+        },
         "ru": {
             "Analog Outputs Configuration": "Аналоговые выходы",
-            "Controller analog outputs configuration": "Конфигурация аналоговых выходов контроллера"
+            "Controller analog outputs configuration": "Конфигурация аналоговых выходов контроллера",
+            "DACchannel": "Канал АЦП",
+            "MQTT id": "Название канала MQTT",
+            "Multiplier": "Множитель",
+            "Maximum output voltage": "Максимальное выходное напряжение",
+            "IIO device number": "Номер устройства IIO",
+            "IIO channel number": "Номер канала IIO",
+            "MQTT device name": "Имя устройства MQTT",
+            "List of DAC channels": "Список каналов АЦП",
+            "multiplier_description": "Итоговое значение получается умножением выходного напряжение АЦП на указанное число",
+            "mV": "мВ"
         }
     }
 }
