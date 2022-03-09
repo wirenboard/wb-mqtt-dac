@@ -8,9 +8,7 @@
         "service": "wb-rules"
     },
     "definitions": {
-        "dac_channel": {
-            "type": "object",
-            "title": "DACchannel",
+        "commonProperties": {
             "properties": {
                 "id": {
                     "type": "string",
@@ -29,30 +27,74 @@
                     "description": "mV",
                     "propertyOrder": 3
                 },
-                "iio_device": {
-                    "type": "integer",
-                    "title": "IIO device number",
-                    "propertyOrder": 4
-                },
                 "iio_channel": {
                     "type": "integer",
                     "title": "IIO channel number",
                     "propertyOrder": 5
                 }
             },
-            "defaultProperties": [
-                "id",
-                "multiplier",
-                "max_value_mv",
-                "iio_device",
-                "iio_channel"
-            ],
             "required": [
                 "id",
                 "multiplier",
                 "max_value_mv",
-                "iio_device",
                 "iio_channel"
+            ]
+        },
+        "dac_channel": {
+            "title": "Channel",
+            "oneOf": [
+                {
+                    "title": "DAC channel with IIO device number",
+                    "allOf": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "iio_device": {
+                                    "type": "integer",
+                                    "title": "IIO device number",
+                                    "propertyOrder": 4
+                                }
+                            },
+                            "required": [
+                                "iio_device"
+                            ]
+                        },
+                        { "$ref": "#/definitions/commonProperties"}
+                    ],
+                    "defaultProperties": [
+                        "id",
+                        "multiplier",
+                        "max_value_mv",
+                        "iio_device",
+                        "iio_channel"
+                    ]
+                },
+                {
+                    "title": "DAC channel with IIO device name",
+                    "allOf": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "iio_of_name": {
+                                    "type": "string",
+                                    "title": "IIO device name",
+                                    "propertyOrder": 4
+                                }
+                            },
+                            "required": [
+                                "iio_of_name"
+                            ]
+                        },
+                        { "$ref": "#/definitions/commonProperties"}
+                    ],
+                    "defaultProperties": [
+                        "id",
+                        "multiplier",
+                        "max_value_mv",
+                        "iio_of_name",
+                        "iio_channel"
+                    ]
+                }
             ]
         }
     },
@@ -82,16 +124,19 @@
         "ru": {
             "Analog Outputs Configuration": "Аналоговые выходы",
             "Controller analog outputs configuration": "Конфигурация аналоговых выходов контроллера",
-            "DACchannel": "Канал ЦАП",
+            "DAC channel with IIO device number": "Канал ЦАП, заданный номером IIO устройства",
+            "DAC channel with IIO device name": "Канал ЦАП, заданный именем IIO устройства",
             "MQTT id": "Название канала MQTT",
             "Multiplier": "Множитель",
             "Maximum output voltage": "Максимальное выходное напряжение",
             "IIO device number": "Номер устройства IIO",
+            "IIO device name": "Имя устройства IIO",
             "IIO channel number": "Номер канала IIO",
             "MQTT device name": "Имя устройства MQTT",
             "List of DAC channels": "Список каналов ЦАП",
             "multiplier_description": "Итоговое значение получается умножением выходного напряжения ЦАП на указанное число",
-            "mV": "мВ"
+            "mV": "мВ",
+            "Channel": "Канал"
         }
     }
 }
