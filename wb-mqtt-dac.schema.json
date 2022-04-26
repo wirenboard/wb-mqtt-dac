@@ -53,6 +53,12 @@
                                     "type": "integer",
                                     "title": "IIO device number",
                                     "propertyOrder": 4
+                                },
+                                "iio_of_name": { 
+                                    "not" : {},
+                                    "options": {
+                                        "hidden": true
+                                    }
                                 }
                             },
                             "required": [
@@ -79,6 +85,12 @@
                                     "type": "string",
                                     "title": "IIO device name",
                                     "propertyOrder": 4
+                                },
+                                "iio_device": {
+                                    "type": "integer",
+                                    "options": {
+                                        "hidden": true
+                                    }
                                 }
                             },
                             "required": [
