@@ -1,3 +1,9 @@
+wb-mqtt-dac (1.1.6) stable; urgency=medium
+
+  * If config contains both iio_device and iio_of_name properties, iio_of_name is used. 
+
+ -- Petr Krasnoshchekov <petr.krasnoshchekov@wirenboard.ru>  Tue, 26 Apr 2022 17:36:36 +0500
+
 wb-mqtt-dac (1.1.5) stable; urgency=medium
 
   * iio_device property validation error is fixed
