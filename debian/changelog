@@ -1,3 +1,10 @@
+wb-mqtt-dac (1.2.0) stable; urgency=medium
+
+  * Support for wb-hwconf-manager 1.51.0 is added.
+    /etc/wb-mqtt-dac.conf is removed.
+
+ -- Petr Krasnoshchekov <petr.krasnoshchekov@wirenboard.ru>  Thu, 28 Apr 2022 12:35:30 +0500
+
 wb-mqtt-dac (1.1.6) stable; urgency=medium
 
   * If config contains both iio_device and iio_of_name properties, iio_of_name is used. 
