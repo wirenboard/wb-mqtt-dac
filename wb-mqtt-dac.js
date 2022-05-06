@@ -7,7 +7,12 @@
       cells: {  }
     };
 
-    var config = readConfig("/etc/wb-mqtt-dac.conf");
+    var config = {};
+    try {
+      config = readConfig("/var/lib/wb-mqtt-dac/conf.d/system.conf");
+    } catch (err) {
+      config = readConfig("/etc/wb-mqtt-dac.conf");
+    }
 
     var channels_by_id = {};
     virt_device_params.title = config.device_name;
