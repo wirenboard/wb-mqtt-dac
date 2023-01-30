@@ -9,9 +9,9 @@
 
     var config = {};
     try {
-      config = readConfig("/var/lib/wb-mqtt-dac/conf.d/system.conf");
+      config = readConfig("/var/lib/wb-mqtt-dac/conf.d/system.conf", {"logErrorOnNoFile": false});
     } catch (err) {
-      config = readConfig("/etc/wb-mqtt-dac.conf");
+      config = readConfig("/etc/wb-mqtt-dac.conf", {"logErrorOnNoFile": false});
     }
 
     var channels_by_id = {};
