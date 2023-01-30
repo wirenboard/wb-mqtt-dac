@@ -7,5 +7,5 @@ Build-Depends: debhelper (>= 9)
 
 Package: wb-mqtt-dac
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, wb-rules
+Depends: ${shlibs:Depends}, ${misc:Depends}, wb-rules (>= 2.18.1~~)
 Description: wb-rules-based IIO DAC driver for WB MQTT
