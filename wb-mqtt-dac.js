@@ -11,7 +11,12 @@
     try {
       config = readConfig("/var/lib/wb-mqtt-dac/conf.d/system.conf", {"logErrorOnNoFile": false});
     } catch (err) {
-      config = readConfig("/etc/wb-mqtt-dac.conf", {"logErrorOnNoFile": false});
+      try {
+        config = readConfig("/etc/wb-mqtt-dac.conf", {"logErrorOnNoFile": false});
+      } catch (err) {
+        log.warning("DAC: no config file");
+        return;
+      }
     }
 
     var channels_by_id = {};
