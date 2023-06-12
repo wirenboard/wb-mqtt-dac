@@ -1,3 +1,9 @@
+wb-mqtt-dac (1.2.3) stable; urgency=medium
+
+  * Format source code. No functional changes
+
+ -- Nikolay Korotkiy <nikolay.korotkiy@wirenboard.com>  Fri, 09 Jun 2023 17:30:00 +0400
+
 wb-mqtt-dac (1.2.2) stable; urgency=medium
 
   * Do not init if config file not found
