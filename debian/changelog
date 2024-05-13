@@ -1,3 +1,9 @@
+wb-mqtt-dac (1.2.5) stable; urgency=medium
+
+  * Fix iio-device-num parsing
+
+ -- Vladimir Romanov <v.romanov@wirenboard.com>  Mon, 13 May 2024 11:22:13 +0300
+
 wb-mqtt-dac (1.2.4) stable; urgency=medium
 
   * Add homepage to deb package info. No functional changes

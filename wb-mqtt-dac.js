@@ -82,7 +82,7 @@
           if (strParts.length == 2) {
             var path = strParts[0];
             var ofNodeName = strParts[1];
-            var num = path[path.length - '/of_node/name'.length - 1];
+            var num = path.match(/iio:device(\d+)/)[1];
             iioChannelOfNodeMap[num] = ofNodeName;
           }
         }
