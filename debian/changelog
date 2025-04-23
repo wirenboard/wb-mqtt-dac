@@ -1,3 +1,9 @@
+wb-mqtt-dac (1.2.6) stable; urgency=medium
+
+  * Fix lintian, no functional changes
+
+ -- Nikolay Korotkiy <nikolay.korotkiy@wirenboard.com>  Wed, 22 Jan 2025 16:34:00 +0400
+
 wb-mqtt-dac (1.2.5) stable; urgency=medium
 
   * Fix iio-device-num parsing
