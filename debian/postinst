@@ -1,7 +1,10 @@
 #!/bin/sh
 set -e
 
-deb-systemd-invoke restart wb-rules
+if [ "$1" = "configure" ]; then
+    deb-systemd-invoke try-restart wb-rules || true
+fi
+
 #DEBHELPER#
 
 exit 0
