@@ -1,3 +1,11 @@
+wb-mqtt-dac (1.2.8) stable; urgency=medium
+
+  * Update LICENSE: Wiren Board as the copyright holder,
+    2016 as the first publication year
+  * Fill debian/copyright in the DEP-5 format
+
+ -- Ekaterina Volkova <ekaterina.volkova@wirenboard.com>  Thu, 12 Nov 2026 15:46:43 +0300
+
 wb-mqtt-dac (1.2.7) stable; urgency=medium
 
   * postinst: use try-restart and ignore restart failures
